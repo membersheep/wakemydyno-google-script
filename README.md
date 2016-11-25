@@ -1,6 +1,7 @@
 # WakeMyDyno
 Simple Google script to wake a heroku dyno (i.e. call an endpoint of your dyno) every hour in a given hour range.
 It uses Google Sheets as interface and Google Script to execute the request.
+Inspired by wakemydyno.com.
 
 # Features
 1. Sends a request to your dynos every hour in a customizable range of hours.
