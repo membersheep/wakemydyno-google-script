@@ -13,7 +13,7 @@ function wakeMyDynos() {
     Logger.log(fromHour);
     var toHour = data[currentRow][2];
     Logger.log(toHour);
-    var currentHour = parseInt(Utilities.formatDate(new Date(), "UTC", "HH"));
+    var currentHour = Number(Utilities.formatDate(new Date(), "UTC", "HH"));
     Logger.log("Current hour " + currentHour);
     if (dynoUrl && currentHour > fromHour && currentHour < toHour) {
       var responseCode = wakeDyno(dynoUrl);
